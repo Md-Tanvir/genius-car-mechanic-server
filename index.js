@@ -64,9 +64,14 @@ async function run() {
 run().catch(console.dir);
 
 app.get("/", (req, res) => {
-  res.send("THIS IS FROM SERVER");
+  res.send("THIS IS FROM GENIUS SERVER");
+});
+
+app.get("/hello", (req, res) => {
+  res.send("THIS IS FROM Hello");
 });
 
 app.listen(port, () => {
   console.log("Server is running", port);
 });
+
